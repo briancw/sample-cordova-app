@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/phonon.min.css">
+        <title>Mt. Ashland</title>
+    </head>
+    <body>
+<!--         <div class="app">
+            <h1>Apache Cordova</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+                <input type="text" class="push_token">
+
+                <br>
+                <a href="#!" class="send_token">Send Token</a>
+            </div>
+        </div> -->
+
+        <div class="side-panel side-panel-left" data-expose-aside="none" data-disable="right" data-page="home" id="side-home">
+            <header class="header-bar">
+                <button class="btn pull-right icon icon-close" data-side-panel-close="true"></button>
+                <div class="pull-left">
+                    <h1 class="title">Panel</h1>
+                </div>
+            </header>
+
+            <div class="content">
+                <ul class="list">
+                    <li><a class="padded-list">Profile</a></li>
+                    <li><a class="padded-list">About</a></li>
+                    <li><a class="padded-list">Settings</a></li>
+                    <li><a class="padded-list">Login</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="js/phonon.min.js"></script>
+    </body>
+</html>
