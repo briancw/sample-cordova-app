@@ -36,7 +36,11 @@ var app = {
         app.send_push_token = function() {
             app.htreq.post(app.server_url + '/add-token', {
                 my_token: app.push_token
-            },function(err, data) {
+            }, function(err, data) {
+                if (err) {
+                    alert( JSON.stringify(err) );
+                }
+
                 alert(data);
             });
         };

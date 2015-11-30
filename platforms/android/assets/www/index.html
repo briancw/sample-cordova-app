@@ -5,9 +5,7 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<!--
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
--->
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"> -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
         <link rel="stylesheet" type="text/css" href="css/index.css">
@@ -17,32 +15,25 @@
 
     <body>
         <nav class="light-blue darken-4">
-            <ul id="slide-out" class="side-nav blue-grey darken-3">
+            <ul id="slide-out" class="side-nav blue-grey darken-1">
                 <li><a href="#!" class="white-text">Dashboard</a></li>
-                <li><a href="#!" class="white-text"><i class="material-icons left">search</i> Settings</a></li>
+                <li><a href="#!" class="white-text"><i class="material-icons">settings</i> Settings</a></li>
             </ul>
 
             <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
         </nav>
 
-        <input type="text" class="push_token">
-        <br>
-        <a href="#!" class="send_token">Send Token</a>
-        <a href="" class="btn-large waves-effect waves-light orange">Test Button</a>
-        <br><br>
-
         <div class="container">
             <div class="section">
-
-                <!--   Icon Section   -->
                 <div class="row">
-                    <div class="col s12 m4">
-                        <div class="icon-block">
-                            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-                        </div>
+                    <div class="col s6">
+                        <a href="#!" class="send_token btn waves-effect waves-light light-blue">Send Token</a>
+                        <input type="text" class="push_token">
+                    </div>
+
+                    <div class="col s6">
                     </div>
                 </div>
-
             </div>
         </div>
 
